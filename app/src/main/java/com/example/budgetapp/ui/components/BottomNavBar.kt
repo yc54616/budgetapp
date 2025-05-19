@@ -3,15 +3,13 @@ package com.example.budgetapp.ui.components
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import com.example.budgetapp.BottomNavItem
-import androidx.compose.material.icons.Icons
-import androidx.compose.ui.graphics.vector.ImageVector
 
 @Composable
 fun BottomNavBar(selected: BottomNavItem, onItemSelected: (BottomNavItem) -> Unit) {
     NavigationBar {
         val items = listOf(
-            BottomNavItem.Home,
             BottomNavItem.Stats,
+            BottomNavItem.Home,
             BottomNavItem.Settings
         )
         items.forEach { item ->
